@@ -1,0 +1,35 @@
+{
+    "name": "leedom/leedom-captcha",
+    "description": "support TP6 usapi captcha, base on topthink\\framework",
+    "type": "library",
+    "require": {
+        "php": "^7.1.0",
+        "topthink/framework": "^6.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leedom\\LeedomCaptcha\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "leedom",
+            "email": "502246267@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "leedom\\captcha\\CaptchaService"
+            ],
+            "config": {
+                "captcha": "src/config.php"
+            }
+        }
+    }
+}
