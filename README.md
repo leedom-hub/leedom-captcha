@@ -1,4 +1,4 @@
-#leedom-captcha
+# leedom-captcha
 
 
 For support TP6 framework to use api model captcha.  
@@ -25,7 +25,7 @@ eg: return a json response
 ```
 ---
 
-##About the `code`
+## About the `code`
 > The response of `code` is the captcha's content,  
 > so return the `code` is not safe.  
 > You can change the `.env` file to return 0, eg:  
@@ -33,10 +33,10 @@ eg: return a json response
 >> APP_STATUS = dev
 
 
-##Install
+## Install
 `composer require leedom/leedom-captcha`
 
-##In api model
+## In api model
 >use leedom\captcha\facade\CaptchaApi;  
 >  
 >$data = CaptchaApi::create();  
@@ -49,7 +49,7 @@ eg: return a json response
     }
 ```
 
-##Check captcha
+## Check captcha
 >CaptchaApi::check($code,$key);  
 > `code => user input; key => response's key`  
 >notice : use cache, depends on what driver you choise  
