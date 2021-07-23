@@ -53,11 +53,3 @@ function captcha_check($value)
     return Captcha::check($value);
 }
 
-/**
- * @param string $value
- * @return bool
- */
-function captcha_api_check($value)
-{
-    return Captcha::check($value);
-}
