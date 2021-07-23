@@ -13,6 +13,6 @@ class CaptchaApi extends Facade
 {
     protected static function getFacadeClass()
     {
-        return \think\captcha\CaptchaApi::class;
+        return \leedom\captcha\CaptchaApi::class;
     }
 }
